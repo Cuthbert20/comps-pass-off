@@ -19,3 +19,7 @@
     height: 30vh;
     flex-wrap: none;
 }
+
+.side-thought > h5 {
+    font-weight: 500;
+}

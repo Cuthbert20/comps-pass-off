@@ -16,6 +16,9 @@ export default class Dashboard extends Component {
                     <p>What else could there be out there for you?Component</p>
                     <h5>Is it all just a dream</h5>
                 </aside>
+                <div>
+                    <h2>DevMtn is the best</h2>
+                </div>
             </main>
         )
     }

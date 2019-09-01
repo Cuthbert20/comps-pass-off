@@ -1,0 +1,22 @@
+.page-dis {
+    border: 1px solid red;
+    float: left;
+    display: inline-block;
+}
+
+#font-fun {
+    font-weight: 700;
+    color: rgb(120, 100, 190);
+    background-color: powderblue;
+}
+
+.duck-sec {
+    background-image: url("https://i.ytimg.com/vi/KZip3k3Ij0M/maxresdefault.jpg");
+    background-size: cover;
+    height: 300px;
+
+}
+
+#cute {
+    font-weight: 700;
+}

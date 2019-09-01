@@ -1,0 +1,36 @@
+.card {
+    box-shadow: 5px 11px rgba(15,0,15, 0.7);
+    width: 30vw;
+    height: 60vh;
+    display: flex;
+    padding: 5px 10px;
+    margin: 0px 50px 50px 0px;
+    border: 1px solid rgba(15,0,15, 0.7);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    box-sizing: border-box
+
+}
+.card:hover {
+    transform: rotate(90deg);
+}
+
+#text-fun {
+    border: 2px solid black;
+    margin: 5px;
+    padding: 1px 0;
+    content: inherit;
+
+}
+
+#final {
+    white-space: nowrap; 
+    width: 200px; 
+    border: 1px solid #000000;
+    text-overflow: clip;
+    overflow: hidden;
+  
+}

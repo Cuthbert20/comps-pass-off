@@ -3,6 +3,7 @@ import Footer from './components/Footer/Footer'
 import './App.css';
 import Nav from './components/Nav/Nav'
 import Dashboard from './components/Dashboard/Dashboard'
+import Info from './components/Info/Info'
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
       <header></header>
       <Nav />
       <Dashboard />
+      <Info />
+      <Footer />
     </div>
   );
 }
