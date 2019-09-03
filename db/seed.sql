@@ -48,3 +48,6 @@ passport_number FLOAT
 )
 
 --person and passport have a one-to-one with eachother each person can only have one passport.
+
+SELECT * FROM movies
+WHERE movie_id = 1;

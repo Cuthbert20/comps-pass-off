@@ -4,6 +4,7 @@ import './App.css';
 import Nav from './components/Nav/Nav'
 import Dashboard from './components/Dashboard/Dashboard'
 import Info from './components/Info/Info'
+import routes from './routes'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Nav />
       <Dashboard />
       <Info />
+      {routes}
       <Footer />
     </div>
   );

@@ -34,3 +34,27 @@
     overflow: hidden;
   
 }
+
+#frog {
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(to right, black , gray);
+}
+/* A > B will only select B that are direct children to A (that is, there are no other elements inbetween).
+
+A B will select any B that are inside A, even if there are other elements between them.
+ie > is the child selector. It specifies only immediate child elements and not any descendent 
+(including grandchildren, grand-grandchildren, ect) 
+a space will select any elements taht are inside of the parent element even if there are other elements between them*/
+
+#frog p {
+    font-weight: 500;
+}
+
+/* The + in a css selector is used to select elements 
+that are place immediately after the specified element but, not inside the particular element */
+
+.card + h3 {
+    color: pink;
+    border: 1px solid pink;
+}

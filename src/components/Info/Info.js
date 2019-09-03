@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router'
 import './Info.css'
 
-export default class Info extends Component {
+class Info extends Component {
     render() {
+        console.log(this.props.match)
         return(
            <main>
                <div>
@@ -24,3 +26,5 @@ export default class Info extends Component {
         )
     }
 }
+
+export default withRouter(Info)
