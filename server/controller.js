@@ -1,9 +1,16 @@
 
-module.export = {
+module.exports = {
+    login: async (req,res) => {
+        const db = req.app.get('db')
+        const { username, user_password } = req.body
+        const user = await db.user_login({username, user_password})
+        const loggedUser = user[0]
+        res.status(200).send(loggedUser)
+    },
     movie: async (req,res) => {
         const db = req.app.get('db')
-        const { id } =  req.params
-        const movie = await db.select_movie([id])
-        res.status(200).send(movie)
+        const movies = await db.select_movie()
+
+        res.status(200).send(movies)
     }
 }

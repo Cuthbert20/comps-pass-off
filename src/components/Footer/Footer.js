@@ -5,7 +5,7 @@ export default class Footer extends Component {
     render() {
         return (
             <footer>
-                <article class='card'>
+                <article className='card'>
                     <div >
                         <img src="https://www.w3schools.com/howto/img_avatar.png" alt=""/>
                     </div>

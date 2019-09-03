@@ -51,3 +51,15 @@ passport_number FLOAT
 
 SELECT * FROM movies
 WHERE movie_id = 1;
+
+--inserting data into a database
+INSERT INTO actor (movie_id, actor_name)
+VALUES
+(2, 'Sigorny Weaver')
+
+--login selecting based on username and password
+SELECT * FROM h_users
+WHERE
+username = 'Dad'
+AND
+user_password = '1234';

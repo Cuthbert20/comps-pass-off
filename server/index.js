@@ -17,8 +17,13 @@ app.use(session({
     }
 }))
 
+app.use("/static", express.static("./media"))
+app.use( express.static( `${__dirname}/../build` ) );
+
 //endpoints
-app.get('/api/movies/:id', ctrl.movie)
+app.post('/auth/login', ctrl.login)
+app.get('/api/movies', ctrl.movie)
+// app.get()
 
 massive(CONNECTION_STRING).then(db => {
     app.set('db', db)
